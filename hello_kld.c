@@ -19,7 +19,7 @@ static int hello_loader(struct module *m, int event, void *arg)
     return 0;
 }
 
-static moduledata_t hello_mod = Â{
+static moduledata_t hello_mod = {
     "Hello World Kernel Module",
     hello_loader,
     NULL,
